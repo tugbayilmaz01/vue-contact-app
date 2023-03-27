@@ -10,6 +10,7 @@
       <li><strong>Phone:</strong> {{ phoneNumber }}</li>
       <li><strong>Email:</strong> {{ emailAdress }}</li>
     </ul>
+    <button @click="$emit('delete', id)">Delete</button>
   </li>
 </template>
 <script>
@@ -40,16 +41,8 @@ export default {
       }, */
     },
   },
-  /*   emits: {
-    "toggle-favorite": function (id) {
-      if (id) {
-        return true;
-      } else {
-        console.warn("Id is missing!");
-        return false;
-      }
-    },
-  }, */
+  emits: ["toggle-favorite", "delete"],
+
   data() {
     return {
       detailsAreVisible: false,
