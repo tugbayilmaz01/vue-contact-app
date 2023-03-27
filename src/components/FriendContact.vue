@@ -40,7 +40,7 @@ export default {
       }, */
     },
   },
-  emits: {
+  /*   emits: {
     "toggle-favorite": function (id) {
       if (id) {
         return true;
@@ -49,7 +49,7 @@ export default {
         return false;
       }
     },
-  },
+  }, */
   data() {
     return {
       detailsAreVisible: false,
