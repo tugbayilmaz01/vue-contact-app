@@ -5,7 +5,6 @@
     <ul v-if="detailsAreVisible">
       <li><strong>Phone:</strong> {{ friend.phone }}</li>
       <li><strong>Email:</strong> {{ friend.email }}</li>
-      <li></li>
     </ul>
   </li>
 </template>
